@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid blue;
+        }
+
+        #logo {
+            border: 1px solid red;
+        }
+
+        #logo>img {
+            width: 50%;
+            margin-right: 100px;
+        }
+
+        #ele {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #products {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: auto;
+            height: 100%;
+        }
+
+        #products img {
+            width: 70%;
+            height: 300px;
+        }
+
+        #products>div {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 70%;
+            margin: auto;
+            height: 100%;
+        }
+
+        button {
+            width: 30%;
+            height: 30px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #sel {
+            display: flex;
+        }
+
+        #sel>Select {
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-right: 20px;
+        }
+
+        #sel>input {
+            width: 100%;
+            height: 25px;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-right: 20px;
+        }
+
+        #ele>a {
+            margin-right: 20px;
+            margin-top: 35px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        #footer {
+            margin-top: 40px;
+            border: 1px solid firebrick;
+            display: flex;
+            justify-content: space-between;
+            background-color: slategray;
+            border: none;
+        }
+
+        #footer h1 {
+            margin-left: 50px;
+        }
+
+        #footer img {
+            width: 20%;
+            height: 50px;
+            margin-top: 15px;
+        }
+
+        #footer form {
+            display: flex;
+            margin-left: -600px;
+            margin-top: 10px;
+            /* margin-right: -35px; */
+
+        }
+
+        #footer form>input,button {
+            margin-left: 70px;
+            margin-top: 17px;
+            font-size: 20px;
+        }
+        #bottom{
+            margin: auto;
+        }
+        #bottom > div>img{
+            margin-left: 100px;
+            width: 10%;
+            height: 200px;
+
+        }
+    </style>
 </head>
+
 <body>
-   <input type="text">
+    <div id="nav">
+        <div id="logo">
+            <img src="Shopkey.png" alt="">
+        </div>
+        <div id="sel">
+            <select name="" id="Select">
+                <option value="">Category</option>
+                <option value="">Mens</option>
+                <option value="">Electronics</option>
+                <option value="">Jewelery</option>
+                <option value="">Womens</option>
+            </select>
+            <input type="text" placeholder="Search Products">
+        </div>
+        <div id="ele">
+            <a href="">Home</a>
+            <a href="">Sign In</a>
+            <a href="">Sign Up</a>
+            <a href="">Cart</a>
+        </div>
+    </div>
+    <div id="products">
+        <!-- products data -->
+    </div>
+
+    <div id="footer">
+        <h1>Get Deals on Email & Earn Cashbaks</h1>
+        <div>
+
+            <form action="">
+                <input type="email" placeholder="E-mail">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div>
+            <img src="	https://cdn1.cronometer.com/webflow/instragm-icon-snow-white.svg" alt="">
+            <img src="https://cdn1.cronometer.com/webflow/facebook-icon-snow-white.svg" alt="">
+            <img src="	https://cdn1.cronometer.com/webflow/twitter-icon-snow-white.svg" alt="">
+            <img src="	https://cdn1.cronometer.com/webflow/youtube-icon-snow-white.svg" alt="">
+        </div>
+    </div>
+    <div id="bottom">
+        <div >
+            <h4>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</h4>
+        </div>
+        <div>
+            <img src="	https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt="">
+            <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png" alt="">
+            <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt="">
+            <img src="	https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt="">
+            <img src="	https://img.shop.com/Image/images/ir/Shop-ranks-13-in-NC-circle.png" alt="">
+            <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png" alt="">
+            <img src="	https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+            <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt="">
+            <img src="	https://seal.digicert.com/seals/cascade/?tag=mcRGO….com&format=png&lang=en&seal_number=3&seal_size=m" alt="">
+        </div>
+    </div>
+    
+
 </body>
+
 </html>
+
+<script src="/Scripts/index.js"></script>

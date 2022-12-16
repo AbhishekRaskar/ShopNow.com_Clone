@@ -1,10 +1,12 @@
 
 
-let signup = document.querySelector("#sin");
-let login = document.querySelector("#sp");
+let signup = document.querySelector("#su");
+let login = document.querySelector("#li");
+let Home = document.querySelector("#home");
+
 
 login.addEventListener("click" , ()=>{
-    window.location.href = "signin.html"
+    window.location.href = "signup.html"
 })
 
 
@@ -17,57 +19,61 @@ signup.addEventListener("click", function () {
     window.location.href = "Login.html"
 });
 
+Home.addEventListener("click",function(){
+    window.location.href = "index.html";
+})
 
 
 
-signUp.addEventListener("submit", function (event) {
 
-    event.preventDefault();
+// signUp.addEventListener("submit", function (event) {
 
-    let Name = signUp.name.value;
-    let User = signUp.email.value;
-    let Pass = signUp.pass.value;
+//     event.preventDefault();
 
-
-    if (Pass != signUp.chkpass.value) {
-        alert("Password is not matching");
-    }
-    else {
-        localStorage.setItem("UserName", Name);
-        localStorage.setItem("UserId", User);
-        localStorage.setItem("UserPass", Pass);
-        alert("Sign Up Successful....!")
+//     let Name = signUp.name.value;
+//     let User = signUp.email.value;
+//     let Pass = signUp.pass.value;
 
 
-        signUp.reset();
-    }
-});
+//     if (Pass != signUp.chkpass.value) {
+//         alert("Password is not matching");
+//     }
+//     else {
+//         localStorage.setItem("UserName", Name);
+//         localStorage.setItem("UserId", User);
+//         localStorage.setItem("UserPass", Pass);
+//         alert("Sign Up Successful....!")
 
 
-signIn.addEventListener("submit", function (event) {
-    event.preventDefault();
-    let User = signIn.email1.value;
-    let Pass = signIn.pass1.value;
+//         signUp.reset();
+//     }
+// });
 
 
-    let UId = localStorage.getItem("UserId");
-    let UPass = localStorage.getItem("UserPass");
+// signIn.addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     let User = signIn.email1.value;
+//     let Pass = signIn.pass1.value;
 
 
-    if (User !== UId) {
-        alert("User Not registered...!");
-    }
-    else {
-        if (Pass !== UPass) {
-            alert("Wrong Password...!");
-        }
-        else {
-            alert("Login Successful...!");
-        }
-
-        window.location.href = "index.html";
-    }
+//     let UId = localStorage.getItem("UserId");
+//     let UPass = localStorage.getItem("UserPass");
 
 
+//     if (User !== UId) {
+//         alert("User Not registered...!");
+//     }
+//     else {
+//         if (Pass !== UPass) {
+//             alert("Wrong Password...!");
+//         }
+//         else {
+//             alert("Login Successful...!");
+//         }
 
-});
+//         window.location.href = "index.html";
+//     }
+
+
+
+// });

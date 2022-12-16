@@ -490,3 +490,11 @@ home.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.href = "index.html";
 })
+
+let store = document.querySelector("#pro");
+
+store.addEventListener("click",function(){
+    // console.log("Working");
+    window.location.href = ""
+})
+

@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCare</title>
+    <style>
+        #ind {
+            background-color: rgb(228, 228, 228);
+            ;
+            height: 30px;
+            display: flex;
+        }
+
+        #ind>img {
+            width: 40px;
+            margin-left: 93%;
+            border-radius: 60%;
+        }
+
+        #ind>p {
+            margin-top: 2px;
+            font-size: 20px;
+        }
+
+        #nav {
+            margin: auto;
+            /* border: 1px solid red; */
+            /* height: auto; */
+
+            /* display: flex;
+            justify-content: space-between; */
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+        }
+
+        #nav>a>img {
+            width: 250px;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        input {
+            width: 500px;
+            height: 45px;
+            margin-left: 100px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        #nav>button {
+            width: 120px;
+            height: 45px;
+            margin-left: 130px;
+            margin-top: 40px;
+
+
+            background-color: rgb(46, 43, 43);
+            /*rgb(249, 242, 242); */
+            color: white;
+            font-size: 17px;
+            transition: ease-out 0.3s;
+            /* justify-content: space-around; */
+        }
+
+        #nav>button:hover {
+            box-shadow: inset 200px rgb(170, 166, 166);
+            cursor: pointer;
+            background-color: rgb(165, 171, 169);
+        }
+
+
+        #nav>button>a {
+            color: white;
+            font-size: 17px;
+        }
+
+
+
+        .nav2 {
+            display: grid;
+            width: 90%;
+            margin: auto;
+            grid-template-columns: repeat(15, 1fr);
+            grid-gap: 3px;
+            /* border: 1px solid red; */
+            transition: 1s;
+        }
+
+        .nav2>div {
+            /* border: 1px solid blue; */
+            height: 60px;
+            width: 100px;
+            /* border: 1px solid black; */
+            text-align: center;
+            font-size: 18px;
+            padding-top: 15px;
+            transition: ease-out 0.3s;
+            box-shadow: rgb(170, 166, 166);
+        }
+
+        .nav2>div:hover {
+            box-shadow: inset 400px 0 0 0 rgb(170, 166, 166);
+            cursor: pointer;
+        }
+
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            .nav2 {
+                grid-template-columns: repeat(7, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            .nav2 {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #nav {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #nav {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        .delivary {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            height: auto;
+            /* border: 1px solid black; */
+            background-color: #f2f2f2;
+            padding: 10px;
+
+
+        }
+
+        .delivary>div {
+            margin-top: 10px;
+            font-size: 18px;
+            /* height: 70PX; */
+            margin-left: 20px;
+        }
+
+        .delivary>div>img {
+            width: 20px;
+        }
+
+        .delivary>div:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+
+        @media all and (min-width:320px) and (max-width:767px) {
+            .delivary {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media all and (min-width:768px) and (max-width:1024px) {
+            .delivary {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+
+        #delivary2 {
+            text-align: center;
+
+            height: 50px;
+            font-size: 20px;
+            background-color: #f2f2f2b8;
+            padding: 10px;
+        }
+
+        #delivary2>div {
+
+            padding-top: 15px;
+
+        }
+
+        #slidemain {
+            position: relative;
+            width: 100%;
+        }
+
+        #slidemain>div {
+            position: absolute;
+            top: 35%;
+            right: 10%;
+            /* color: rgba(255, 255, 255, 0.938); */
+            color: rgb(154, 214, 207);
+            font-size: 20px;
+        }
+
+        #slidemain>div>button {
+            width: 200px;
+            height: 40px;
+            font-size: 20PX;
+        }
+
+        #slidemain>div>p {
+            font-size: 20px;
+        }
+
+        #slidemain>img {
+            width: 100%;
+            height: 35rem
+        }
+
+        #sysImg {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #sysImg>img {
+            width: 41%;
+        }
+
+        #sysImg>div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #sysImg>div>img {
+            width: 40%
+        }
+
+        #catagory>p {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .catagory1 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+            grid-row-gap: 10px;
+            /* margin-left: 110px */
+            transition: 1s;
+        }
+
+        .catagory1>div>img {
+            width: 65%;
+            margin-left: 30px;
+        }
+
+        .catagory1>div>img:hover {
+            transform: scale(1.3);
+            z-index: 2;
+        }
+
+        @media all and (min-width:320px) and (max-width:767px) {
+            .catagory1 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media all and (min-width:768px) and (max-width:1024px) {
+            .catagory1 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+
+        #sysImg>p {
+            font-size: 20px;
+        }
+
+        #longimg {
+            width: 90%;
+            margin: auto;
+        }
+
+        #longimg>img {
+
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        #product {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            grid-gap: 10px;
+            margin-top: 20px;
+            width: 90%;
+            margin: auto;
+
+        }
+
+
+        p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #product>div {
+
+            width: 95%;
+            margin-left: 10px;
+            border: 1px solid grey
+        }
+
+        #product>div>img {
+            /* border-radius: 50%; */
+            width: 50%;
+            transition: all 0.5s ease;
+        }
+
+        #product>div>img:hover {
+            transform: scale(1.2);
+        }
+
+        #product>div:nth-child(2) img {
+            width: 44%;
+        }
+
+        #product>div:nth-child(10) img {
+            width: 44%;
+        }
+
+        #product>div>button {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            transition: ease-out 0.3s;
+            box-shadow: rgb(170, 166, 166);
+            /* padding-bottom: 0px; */
+        }
+
+        #product>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #product>div>button:hover {
+            box-shadow: inset 400px 0 0 0 rgb(170, 166, 166);
+            cursor: pointer;
+
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #product {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #product {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #bottom {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            width: 90%;
+            margin: auto;
+            margin-top: 60px;
+
+        }
+
+        #bottom>div>img {
+            width: 90%;
+        }
+
+        #bottom>div>p {
+            font-size: 18px;
+        }
+
+        @media all and (min-width:320px) and (max-width:767px) {
+            #bottom {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .gift {
+            margin: auto;
+            width: 60%;
+            display: flex;
+            justify-items: space-evenly;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 25px;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+
+        }
+
+        .gift>div {
+            gap: 20px;
+            margin: auto;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            .gift {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            .gift {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #product2 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            text-align: center;
+            grid-gap: 10px;
+            margin-top: 20px;
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+
+
+        #product2>div {
+
+            width: 95%;
+            margin-left: 10px;
+            /* border: 1px solid grey */
+        }
+
+        #product2>div>img {
+            /* border-radius: 50%; */
+            width: 70%;
+            transition: all 0.5s ease;
+        }
+
+        #product2>div>img:hover {
+            transform: scale(1.2);
+        }
+
+
+        #product2>div:nth-child(10) img {
+            width: 70%;
+            margin-top: 47px;
+        }
+
+        #product2>div>button {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            transition: ease-out 0.3s;
+            box-shadow: rgb(170, 166, 166);
+
+
+        }
+
+        #product2>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #product2>div>button:hover {
+            box-shadow: inset 400px 0 0 0 rgb(170, 166, 166);
+            cursor: pointer;
+
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #product2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #product2 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .featuredBrand {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            width: 90%;
+            margin: auto;
+            place-content: center;
+            grid-gap: 10px;
+        }
+
+        .featuredBrand>div>img {
+            width: 80%;
+        }
+
+        .featuredBrand>div {
+            display: grid;
+            place-content: center;
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            .featuredBrand {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            .featuredBrand {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        #blog {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin-top: 50px;
+
+        }
+
+        #blog>div>p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #blog>div {
+            margin-left: 10px;
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #blog {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #blog {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        #last {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: auto;
+        }
+
+        #last>div>p {
+            font-size: 19px;
+            margin-right: 10%;
+
+
+        }
+
+        #last>div>button {
+            margin-left: 40px;
+            height: 50px;
+            width: 200px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        #last>div>hr {
+            height: solid 3px;
+            color: grey;
+            margin-top: 10px;
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #blog {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #blog {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #last2>div {
+
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: -10px;
+
+        }
+
+        #last2>div>img {
+
+            width: 5%;
+            height: 40px;
+            margin-top: 20px;
+
+
+        }
+
+        #last2>div>hr {
+            height: solid 3px;
+            color: grey;
+            margin-left: 10px;
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #last {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #last {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #secondlast {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 90%;
+            margin: auto;
+        }
+
+        #secondlast>div>p {
+            font-size: 20px;
+        }
+
+        #secondlast>div>p:hover {
+            color: coral;
+            cursor: pointer;
+        }
+
+        #secondlast>div>div>img {
+            width: 2%;
+
+        }
+
+        #secondlast>div>div>p {
+            font-size: 30px;
+        }
+
+        #secondlast>div>div {
+
+            display: flex;
+            height: 8%;
+            height: 30px;
+            width: 800px;
+            margin-top: 10px;
+        }
+
+        #secondlast>div:nth-child(1) {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #secondlast {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #secondlast {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        #payment {
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(10, 1fr);
+            width: 90%;
+            margin: auto;
+        }
+
+        #payment>img {
+            width: 50%;
+        }
+
+        #payment0 {
+            text-align: center;
+        }
+
+        @media all and (min-width:768px) and (max-width:1024px) {
+            #payment {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:320px) and (max-width:767px) {
+            #payment {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* b{
+    text-align: center;
+    margin:auto;
+   } */
+    </style>
+</head>
+
+<body>
+    <div id="ind">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.mx4HBnQB6eiOy8Ft_9Zu4wHaE8&pid=Api&P=0" alt="">
+        <p>&nbsp;&nbsp;IND</p>
+    </div>
+    <div id="nav">
+        <a href="index.html"><img src="https://i.ibb.co/m99mjdC/Skin-Care.png" alt="Skin-Care"></a>
+        <input type="text" placeholder="Search a product or brand......" />
+        <button class="butt"><a href="register.html">REGISTER</a> </button>
+        <button class="butt"><a href="login.html">LOGIN</a></button>
+        <button class="butt"><a href="carted.html">CART</a></button>
+
+    </div>
+    <div class="nav2">
+        <div>Brands</div>
+        <div>Holiday Shop</div>
+        <div>Brows<br> By</div>
+        <div>BestSeller</div>
+        <div>Skin<br> Care</div>
+        <div>Makeup</div>
+        <div>Hair<br> Care</div>
+        <div>Bath <br>Body</div>
+        <div>Fragrance<br> Shop</div>
+        <div>Tools & <br>Devices</div>
+        <div>Gifts &<br> Sets</div>
+        <div>BeautyFIX</div>
+        <div>Offer</div>
+        <div>New</div>
+        <div>Skin<br> 101</div>
+    </div>
+    <div class="delivary">
+        <div>
+            <img src="https://i.ibb.co/nfQtKk8/delivery.png" alt="">&nbsp;
+            FREE US Shipping $50+
+        </div>
+        <div>
+            <img src="https://i.ibb.co/YhCS2x6/clock.png" alt="">
+            New Customers Save 15%*
+        </div>
+        <div>
+            <img src="https://i.ibb.co/tckmY39/note-book.png" alt="">
+            Dermstore Rewards
+        </div>
+        <div>
+            <img src="https://i.ibb.co/LNHMLnC/clock-1.png" alt="">
+            Ask The Esthetician
+        </div>
+        <div>
+            <img src="https://i.ibb.co/kmZR1J5/download.png" alt="">
+            Download Our App
+        </div>
+        <div>
+            <img src="https://i.ibb.co/k2C7StY/check.png" alt="">
+            Refer a Friend, Get $15
+        </div>
+    </div>
+    <div id="delivary2">
+        <div>
+            Rewards members get DOUBLE points on EltaMD. Plus, receive a $16 gift when you spend $75+ on the brand.
+            START EARNING
+        </div>
+    </div>
+    <div id="slidemain">
+        <img id="slideImage" src="" alt="">
+        <div>
+            <h1>25 Days of Beauty</h1>
+            <p>Countdown to the ultimate holiday routine<br>
+                with our Beauty Advent Calendar,<br>
+                featuring<br>
+                25 days of delightful full & deluxe-size<br>
+                favorites from our most-wanted brands. SHOP NOW</p>
+            <button>SHOP NOW</button>
+        </div>
+    </div>
+    <div id="sysImg">
+        <h2>2X Points On EltaMD</h2>
+        <p>Rewards members earn DOUBLE on sunscreen, moisturizers & more. Plus, receive a $16 gift when you spend $75+
+            on the brand.</p>
+        <div>
+            <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/50/1031-STDCRE-43056-DS-WC-November-Batching-Shot-19-HP_LPSQ_BANNER_676x556-050250.jpg"
+                alt="12">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/05/HP_LPSQ_BANNER_676x556-064705.jpg"
+                alt="23">
+        </div>
+    </div>
+    <div id="catagory">
+        <p>Shop By Catagory </p>
+        <div class="catagory1">
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/20/DS_Round_Nav_-_Untitled_Page_%287%29-052520.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/36/DS_Round_Nav_-_Untitled_Page_%2833%29-085536.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/32/DS_Round_Nav_-_Untitled_Page_%289%29-052632.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/03/DS_Round_Nav_-_Untitled_Page_%2810%29-052703.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/49/DS_Round_Nav_-_Untitled_Page_%2813%29-053649.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/36/DS_Round_Nav_-_Untitled_Page_%2825%29-063536.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div id="longimg">
+        <img src="https://static.thcdn.com/images/large/webp/widgets/208-us/26/original-Holiday_Shop_Disrupter_%28long%29-045226.png"
+            alt="">
+    </div>
+
+    <p>BestSeller</p>
+    <div id="product">
+        <!-- js file -->
+    </div>
+    <div id="bottom">
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/12/Revision_NPD-040112.png" alt="" />
+            <h3>New from Revision Skincare</h3>
+            <p>A serum that helps strengthen skins barrier & boost elasticity.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/10/Rewards_%281%29-070210.png" alt="">
+            <h3>Spotlight On: Dr. Loretta</h3>
+            <p>Look and feel confident with dermatologist-founded products that make you feel like yourself again.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/49/PCA_Skin_NPD-055049.png" alt="">
+            <h3>New from PCA Skin</h3>
+            <p>Help resurface, calm & hydrate for smoother, clearer-looking skin.</p>
+        </div>
+    </div>
+    <div class="gift">
+        <div><u>Arrivels</u></div>
+        <div>Gifts&Seats</div>
+        <div>Dermstore Exclusive</div>
+    </div>
+    <div id="product2">
+        <!-- js file -->
+    </div>
+    <p>Featured Brands</p>
+    <div class="featuredBrand">
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/SR-logo_2000x2000-060919.jpg"
+                alt="" />
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/original-220322-ELTAMD-LOGO-RGB-01_%28002%29-014534.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/09/Chantecaille-033909.png" alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/21/augustinusbader-124221.gif" alt="">
+        </div>
+    </div>
+    <p>From The Blog</p>
+    <div id="blog">
+
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/26/allure_blog-091926.jpg" alt="" />
+            <p><u>
+                    18 Hair, Skin and Body Products to Shop from Allures Best of Beauty Awards
+                </u></p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/38/skin_timeline_%281%29-051238.jpg"
+                alt="">
+            <p><u>
+                    The Ultimate Skin Care Timeline
+                </u></p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/03/woman-in-the-sunlight-feature_1625258073-040303.jpg"
+                alt="">
+            <p><u>
+                    Why Probiotics Might Be the Secret to Calmer, Clearer Skin
+                </u></p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/original-skincare-order-073119.jpg"
+                alt="">
+            <p><u>
+                    In What Order Do I Apply My Skin Care Products?
+                </u></p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/30/webimage-E9B1D072-B3F0-4E6E-808214934AB6851F-042830.png"
+                alt="">
+            <p><u>
+                    The Skinmialistic Three-Step P.M. Routine: Normal-Combo Skin
+                </u></p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <div id="last">
+        <div>
+            <p>
+                Sign up to our newsletters and receive the latest exclusive discounts and deals
+            </p>
+            <button>Sign Up</button>
+            <hr>
+        </div>
+        <div id="last2">
+            <p>Contact With us</p>
+            <div>
+
+                <img src="https://i.ibb.co/b21ZBPD/facebook.png" alt="">
+                <img src="https://i.ibb.co/gzw4X5c/instagram.png" alt="">
+                <img src="https://i.ibb.co/SNQKJyK/twitter.png" alt="">
+                <img src="https://i.ibb.co/MhhgbJG/youtube.png" alt="">
+                <img src="https://i.ibb.co/qxk11mL/search.png" alt="">
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="secondlast">
+        <div>
+            <p>Customer Service</p>
+            <div>
+                <img src="https://i.ibb.co/2FTNQxB/info-round-button.png" alt="">&nbsp;&nbsp;
+                Help Center/FAQ
+            </div>
+            <div>
+                <img src="https://i.ibb.co/6bYVm8k/return.png" alt="">&nbsp;&nbsp;
+                Returns
+            </div>
+            <div>
+                <img src="https://i.ibb.co/127X6D2/delivery-truck.png" alt="">&nbsp;&nbsp;
+                Shipping Information
+            </div>
+            <div>
+                <img src="https://i.ibb.co/YyJ50yc/tracking.png" alt="">&nbsp;&nbsp;
+                Track my Order
+            </div>
+            <div>
+                <img src="https://i.ibb.co/pjvQfN9/cookies.png" alt="">&nbsp;&nbsp;
+                Cookies settiing
+            </div>
+
+        </div>
+        <div>
+            <p>My Account</p>
+            <br>
+            <p>Manage my auto<br>
+                repleshiment.
+            </p>
+            <p>My Rewards</p>
+            <p>My Fevourites</p>
+            <p>Refer a Friend</p>
+            <p>Order History</p>
+        </div>
+        <div>
+            <p>Company</p>
+            <br>
+            <p>About us </p>
+            <p>Place</p>
+            <p>What is clarna ?</p>
+        </div>
+        <div>
+            <p>Legal</p>
+            <br>
+            <p>Privacy Policy</p>
+            <p>Terms & Condition</p>
+            <p>Modern Slavery Conditions</p>
+            <p>Product Recall</p>
+            <p>Accessibility</p>
+        </div>
+    </div>
+    <hr>
+    <div id="payment0">
+
+        <b>PAY SECULARLY WITH</b>
+
+        <div id="payment">
+
+
+            <img src="https://tse1.mm.bing.net/th?id=OIP.IFATrV6ZrvBdbKIBqaw6MQHaEl&pid=Api&rs=1&c=1&qlt=95&w=195&h=120"
+                alt="">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.rIreWLer9fXEjb8DLyHo_wHaE1&pid=Api&rs=1&c=1&qlt=95&w=166&h=108"
+                alt="">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.wBKSzdf1HTUgx1Ax_EecKwHaHa&pid=Api&rs=1&c=1&qlt=95&w=106&h=106"
+                alt="">
+            <img src="https://i.ibb.co/gzxDptz/visa.png" alt="">
+            <img src="https://i.ibb.co/gzxDptz/visa.png" alt="">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.pb5XwVx5C_O3Rvz7c_F4YwHaE8&pid=Api&rs=1&c=1&qlt=95&w=158&h=105"
+                alt="">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.TRozxgHH_1RL9eF0qWKjhgHaEK&pid=Api&rs=1&c=1&qlt=95&w=180&h=101"
+                alt="">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.W3HjhLT3XnfGsAPE-ppq9QHaE8&pid=Api&P=0" alt="">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.jW2sdfnfde0TsjkoD0aucwHaEp&pid=Api&P=0" alt="">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.xZgH-4veSgP8Qib60hiWcgHaE8&pid=Api&P=0" alt="">
+        </div>
+    </div>
+
+</body>
+<script src="./src/index.js"></script>
+
+</html>

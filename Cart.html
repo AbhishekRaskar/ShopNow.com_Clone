@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #cart-cont img {
+            width: 70%;
+            height: 300px;
+        }
+
+        #cart-cont {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            align-content: center;
+        }
+
+        #cart-cont>div {
+           
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 70%;
+            margin: auto;
+            height: 100%;
+        }
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid blue;
+        }
+
+        #logo {
+            border: 1px solid red;
+        }
+
+        #logo>img {
+            width: 50%;
+            margin-right: 100px;
+        }
+        .ele>a {
+            margin-right: 20px;
+            margin-top: 35px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img src="Shopkey.png" alt="">
+        </div>
+        <div class="ele">
+            <a href="./index.html">Home</a>
+            <a href="./cart.html">Cart</a>
+            <a href="./payment.html">Payment</a>
+        </div>
+    </div>
+    <div>
+        <h1>Total Price:- <span id="cart-total">0</span></h1>
+        <input type="text" id="cupon" placeholder="ShopKey End of Season 30%" />
+        <button id="cupon-active">Submit</button>
+    </div>
+    <div id="cart-cont">
+
+    </div>
+</body>
+<script src="./Scripts/Cart.js">
+
+</script>
+
+</html>

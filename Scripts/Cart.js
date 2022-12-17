@@ -93,7 +93,7 @@ function Display(Data) {
             let ans = total.textContent - disc;
             // console.log(ans);
 
-            if (coupen.value == "ShopKey End of Season 30%" && count < 1) {
+            if (coupen.value == "Special 30" && count < 1) {
                 total.textContent = ans;
                 count++;
             }

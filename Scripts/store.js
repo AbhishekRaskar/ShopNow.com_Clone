@@ -428,6 +428,7 @@ let main = document.querySelector("#products")
 function Display(productData) {
 
     console.log(productData)
+    main.textContent = "";
 
     productData.forEach(function (elem, i) {
 
@@ -482,19 +483,49 @@ let Up = document.querySelector("#signIn");
 Up.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.href = "Login.html";
-})
+});
 
 let home = document.querySelector("#home");
 
 home.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.href = "index.html";
+});
+
+// let store = document.querySelector("#pro");
+
+// store.addEventListener("click",function(){
+//     // console.log("Working");
+//     window.location.href = ""
+// });
+// console.log(productData);
+
+let cate = document.querySelector("#Select");
+
+cate.addEventListener("change",function(event){
+    // console.log("hi");
+   main.textContent = "";
+    let storeCate = [];
+    
+    for(let i=0;i<productData.length;i++){
+        if(productData[i].category == cate.value){
+            storeCate.push(productData[i]);
+        }
+    }
+    Display(storeCate);
+});
+
+let Sor = document.querySelector("#Sort");
+
+
+
+Sor.addEventListener("input",function(){
+    // console.log("hi");
+    let Val = Sor.value;
+
+    let data = productData.filter(function(elem){
+        
+        return elem.desc.toLocaleLowerCase().includes(Val.toLocaleLowerCase());
+    });
+    Display(data)
 })
-
-let store = document.querySelector("#pro");
-
-store.addEventListener("click",function(){
-    // console.log("Working");
-    window.location.href = ""
-})
-

@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin</title>
+    <title>Sign Up</title>
     <style>
         * {
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        #parent{
-            width: 100%;
-            border: 1px solid black;
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+            background-color: rgb(242, 254, 222);
+
         }
+
         #logo {
             width: 50%;
             height: 140px;
@@ -23,7 +28,7 @@
         }
 
         #container {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 100%;
             margin: auto;
             display: flex;
@@ -35,7 +40,7 @@
             height: auto;
             margin: auto;
             margin-left: 10px;
-        
+
         }
 
         #container>div {
@@ -55,6 +60,7 @@
             margin: 5px 0;
             gap: 10px;
         }
+
         #footer {
             margin-top: 40px;
             border: 1px solid firebrick;
@@ -82,17 +88,19 @@
 
         }
 
-        #footer form>input,button {
+        #footer form>input,
+        button {
             width: 100%;
             margin-left: 10px;
             margin-top: 17px;
             font-size: 20px;
         }
+
         #footer form>button {
             width: 100%;
             height: 29px;
         }
-        
+
         #bottom {
             margin: auto;
         }
@@ -103,86 +111,155 @@
             height: 200px;
 
         }
-      
+
+        input {
+            font-size: 20px;
+            width: 100%;
+            height: 30px;
+        }
+
+        #sub {
+            width: 100%;
+            height: 30px;
+        }
+        
     </style>
 </head>
 
 <body>
-    <div id="parent">
-    <div id="container">
-        <div id="logo">
-            <img src="/Shopkey.png">
-        </div>
-        <div id="btn">
-            <button id="su">Sign Up</button>
-            <button>Sign In</button>
+    <div id="nav">
+        <div id="container">
+            <div id="logo">
+                <img src="/Shopkey.png">
+            </div>
+            <div id="btn">
+                <button id="home">Home</button>
+                <button id="su">Sign Up</button>
+                <button id="li">Log In</button>
+
+            </div>
         </div>
     </div>
-    <div id="main">
-        
-        <form id="signIn">
-            <h1>Sign In</h1>
-            <input type="email" id="email1" placeholder="E-mail" required>
-            <br>
-            <input type="password" id="pass1" placeholder="Password" required>
-            <br>
-            <input type="submit">
-        </form>
-
-    </div>
-    <div id="footer">
-        <h1>Get Deals on Email & Earn Cashbaks</h1>
-        <div>
-
-            <form action="">
-                <input type="email" placeholder="E-mail">
-                <button>Sign Up</button>
+        <div id="main">
+            <form id="signUp">
+                <h1>Sign Up</h1>
+                <input type="text" id="name" placeholder="Name" required>
+                <br>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <br>
+                <input type="password" id="pass" placeholder="Password" required>
+                <br>
+                <input type="password" id="chkpass" placeholder="Re-enter Password" required>
+                <br>
+                <br>
+                <input id="sub" type="submit">
             </form>
+
+
         </div>
-        <div>
-            <img src="	https://cdn1.cronometer.com/webflow/instragm-icon-snow-white.svg" alt="">
-            <img src="https://cdn1.cronometer.com/webflow/facebook-icon-snow-white.svg" alt="">
-            <img src="	https://cdn1.cronometer.com/webflow/twitter-icon-snow-white.svg" alt="">
-            <img src="	https://cdn1.cronometer.com/webflow/youtube-icon-snow-white.svg" alt="">
+        <div id="footer">
+            <h1>Get Deals on Email & Earn Cashbaks</h1>
+            <div>
+
+                <form action="">
+                    <input type="email" placeholder="E-mail">
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div>
+                <img src="	https://cdn1.cronometer.com/webflow/instragm-icon-snow-white.svg" alt="">
+                <img src="https://cdn1.cronometer.com/webflow/facebook-icon-snow-white.svg" alt="">
+                <img src="	https://cdn1.cronometer.com/webflow/twitter-icon-snow-white.svg" alt="">
+                <img src="	https://cdn1.cronometer.com/webflow/youtube-icon-snow-white.svg" alt="">
+            </div>
         </div>
-    </div>
-    <div id="bottom">
-        <div>
-            <h4>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and
-                brands are the property of their respective owners.Only Customers will receive cashback on qualifying
-                purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on
-                qualifying purchases.Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping
-                Information</h4>
+        <div id="bottom">
+            <div>
+                <h4>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and
+                    brands are the property of their respective owners.Only Customers will receive cashback on
+                    qualifying
+                    purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on
+                    qualifying purchases.Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy |
+                    Shipping
+                    Information</h4>
+            </div>
+            <div>
+                <img src="	https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt="">
+                <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png"
+                    alt="">
+                <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt="">
+                <img src="	https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt="">
+                <img src="	https://img.shop.com/Image/images/ir/Shop-ranks-13-in-NC-circle.png" alt="">
+                <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png"
+                    alt="">
+                <img src="	https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+                <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png"
+                    alt="">
+                <img src="	https://seal.digicert.com/seals/cascade/?tag=mcRGO….com&format=png&lang=en&seal_number=3&seal_size=m"
+                    alt="">
+            </div>
         </div>
-        <div>
-            <img src="	https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt="">
-            <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png"
-                alt="">
-            <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt="">
-            <img src="	https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt="">
-            <img src="	https://img.shop.com/Image/images/ir/Shop-ranks-13-in-NC-circle.png" alt="">
-            <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png" alt="">
-            <img src="	https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
-            <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt="">
-            <img src="	https://seal.digicert.com/seals/cascade/?tag=mcRGO….com&format=png&lang=en&seal_number=3&seal_size=m"
-                alt="">
-        </div>
-    </div>
-</div>
+   
 </body>
 
 </html>
+
+
 <script>
-    let signup = document.querySelector("#su");
+    let signIn = document.querySelector("#li");
 
 
-signup.addEventListener("click", function () {
+    signIn.addEventListener("click", function () {
+        
+        window.location.href = "LogIn.html"
+    });
 
-    // signIn.style.display = "none";
-    // signUp.style.display = "block";
+    let home = document.querySelector("#home");
 
-    // document.title = "Sign Up";
-    window.location.href = "Login.html"
-});
+    home.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.location.href = "index.html";
+    });
+
+    let Data = JSON.parse(localStorage.getItem("DATA")) || [];
+
+
+
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let name = document.querySelector("#name").value;
+        let email = document.querySelector("#email").value;
+        let pass = document.querySelector("#pass").value;
+        let chkpass = document.querySelector("#chkpass").value;
+
+
+
+        let data = {
+            Name: name,
+            Email: email,
+            Pass: pass,
+            Chkpass: chkpass
+        }
+        if (pass != chkpass) {
+            alert("Password is not matching");
+        }
+        else {
+
+            Data.push(data);
+            // console.log(Data)
+            localStorage.setItem("DATA", JSON.stringify(Data));
+            alert("Sign Up Successful....!");
+            form.reset();
+        }
+
+
+
+
+
+    })
+
 
 </script>

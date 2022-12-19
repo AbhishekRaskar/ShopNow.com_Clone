@@ -122,6 +122,10 @@
             width: 100%;
             height: 30px;
         }
+        #footer form>button {
+            width: 100%;
+            height: 36px;
+        }
         
     </style>
 </head>
@@ -205,61 +209,62 @@
 </html>
 
 
-<script>
-    let signIn = document.querySelector("#li");
+<script src="./Scripts/SignUp.js">
+    // let signIn = document.querySelector("#li");
 
 
-    signIn.addEventListener("click", function () {
+    // signIn.addEventListener("click", function () {
         
-        window.location.href = "LogIn.html"
-    });
+    //     window.location.href = "LogIn.html"
+    // });
 
-    let home = document.querySelector("#home");
+    // let home = document.querySelector("#home");
 
-    home.addEventListener("click", function (event) {
-        event.preventDefault();
-        window.location.href = "index.html";
-    });
+    // home.addEventListener("click", function (event) {
+    //     event.preventDefault();
+    //     window.location.href = "index.html";
+    // });
 
-    let Data = JSON.parse(localStorage.getItem("DATA")) || [];
-
-
-
-    let form = document.querySelector("form");
-
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        let name = document.querySelector("#name").value;
-        let email = document.querySelector("#email").value;
-        let pass = document.querySelector("#pass").value;
-        let chkpass = document.querySelector("#chkpass").value;
+    // let Data = JSON.parse(localStorage.getItem("DATA")) || [];
 
 
 
-        let data = {
-            Name: name,
-            Email: email,
-            Pass: pass,
-            Chkpass: chkpass
-        }
-        if (pass != chkpass) {
-            alert("Password is not matching");
-        }
-        else {
+    // let form = document.querySelector("form");
 
-            Data.push(data);
-            // console.log(Data)
-            localStorage.setItem("DATA", JSON.stringify(Data));
-            alert("Sign Up Successful....!");
-            form.reset();
-        }
+    // form.addEventListener("submit", function (event) {
+    //     event.preventDefault();
+
+    //     let name = document.querySelector("#name").value;
+    //     let email = document.querySelector("#email").value;
+    //     let pass = document.querySelector("#pass").value;
+    //     let chkpass = document.querySelector("#chkpass").value;
 
 
 
+    //     let data = {
+    //         Name: name,
+    //         Email: email,
+    //         Pass: pass,
+    //         Chkpass: chkpass
+    //     }
+    //     if (pass != chkpass) {
+    //         alert("Password is not matching");
+    //     }
+    //     else {
+
+    //         Data.push(data);
+    //         // console.log(Data)
+    //         localStorage.setItem("DATA", JSON.stringify(Data));
+    //         alert("Sign Up Successful....!");
+    //         window.location.href = "Login.html";
+    //         form.reset();
+    //     }
 
 
-    })
+
+
+
+    // })
 
 
 </script>

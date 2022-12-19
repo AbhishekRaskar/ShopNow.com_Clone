@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>OTP</title>
     <style>
         * {
             text-align: center;
@@ -148,33 +148,15 @@
     </div>
 
     <div id="mid">
-        <h1>PAYMENT</h1>
-        <div id="but" style="display: flex; flex-direction: column; margin-left: 20px; margin-bottom: 30px;">
-            <a href=""><button id="fbb" style="width:309px ;">Pay On Delivery</button></a>
-            <p style="margin: 20px 0px -2px -10px;">OR</p>
-            <a href=""><button id="gol" style="width: 307px; margin-left: 12px;">&nbsp&nbsp&nbsp PAY ONLINE
-                    &nbsp&nbsp&nbsp&nbsp</button></a>
-        </div>
+        <h1>OTP Verification</h1>
+        
 
-        <form action="otp.html">
-            <input type="number" placeholder="Card No." id="fist">
-            <br>
-            <br>
-            <input type="text" placeholder="Card Holder Name" id="last">
-            <br>
-            <br>
-            <input type="number" placeholder="CVV" id="mail">
-            <br>
-            <br>
-            <input type="number" placeholder="Expiry Date" id="user">
-            <br>
-            <br>
-            <input type="checkbox" id="chb">
-            <p id="pc">I agree to the ShopKey's all terms of Service and Privacy Policy
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-            <br>
-            <br>
-            <input type="submit" id="join" value="PAY">
+        <form>
+            <input type="number" placeholder="OTP" id="fist">
+           <br>
+           <br>
+           <br>
+            <input type="submit" id="join" value="Verify OTP">
         </form>
     </div>
 
@@ -222,46 +204,42 @@
 </body>
 
 </html>
-<script src="./Scripts/pay.js">
+<script src="./Scripts/otp.js">
     // let signup = document.querySelector("#su");
 
 
     // signup.addEventListener("click", function () {
     //     window.location.href = "SignUp.html"
+    //     alert("hi")
     // });
     // let home = document.querySelector("#home");
 
     // home.addEventListener("click", function (event) {
     //     event.preventDefault();
     //     window.location.href = "index.html";
+    //     alert("hi")
+
     // });
 
     // let Up = document.querySelector("#foo");
 
     // Up.addEventListener("click", function () {
     //     event.preventDefault();
-    //     window.location.href = "SignUp.html";
+    //     window.location.href = "SignUp.html"
     //     // console.log("hi");
     // });
+
     
-
-
-
-    // let form=document.querySelector("#join")
-    // form.addEventListener("click",(event) =>{
+    // document.querySelector("#join").addEventListener("click",function(event){
     //     event.preventDefault();
-    //     let fist=document.querySelector("#fist").value;
-    //     let last=document.querySelector("#last").value;
-    //     let user=document.querySelector("#user").value;
-    //     let mail=document.querySelector("#mail").value;
-    //     let ckbx=document.querySelector("#chb").value;
-
-    //     if(fist=="" || last=="" || user=="" || mail=="" || ckbx==""){
-    //         alert("Please fill all details !")
+    //     let val=document.querySelector("#fist").value;
+    //     // console.log("hi");
+    //     if(val == "1234"){
+    //         window.location.href = "home.html";
     //     }
     //     else{
-    //         window.location.href = "otp.html";
+    //         alert("Incorrect OTP..");
     //     }
+    // })
 
-    // });
 </script>

@@ -8,7 +8,7 @@
 Shopkey.com is an E-commerce website that sells exclusive clothes for men's & women's.
 
 To see the live site click the below link.
-https://angels-paradise-abhishekraskar.vercel.app/
+[See Live](https://mellow-bunny-71b58e.netlify.app/)
 
 
 <h1>Built with</h1>

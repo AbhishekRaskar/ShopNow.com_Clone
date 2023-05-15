@@ -5,7 +5,7 @@
 <h1><b>JS Individual Project</b></h1>
 <h1>Name - ShopKey.com</h1>
 
-This is the Logo of the The Angels Paradise website. The Angels Paradise is an online Ecommerce Website which is providing Beauty Productsfor Women. From this website, users can Order Some Beauty Products and much more across the world.
+Shopkey.com is an E-commerce website that sells exclusive clothes for men's & women's.
 
 To see the live site click the below link.
 https://angels-paradise-abhishekraskar.vercel.app/
@@ -23,6 +23,5 @@ Login,
 Sorting,
 Searching Functionality,
 filtering ,
-Pagination,
 Payment Page,
 Cart Page

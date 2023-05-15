@@ -1,5 +1,5 @@
 # -sensitive-form-8100
-<img src="https://angels-paradise-abhishekraskar.vercel.app/static/media/Angels_Paradise.35e9e4c9e7ae90545445.png" alt="Logo" title="Project Logo">
+<img src="https://mellow-bunny-71b58e.netlify.app/Shopkey.png" alt="Logo" title="Project Logo">
 
 
 <h1><b>JS Individual Project</b></h1>
